@@ -8,10 +8,11 @@ import { BsArrowRight, BsLinkedin } from "react-icons/bs";
 import { HiDownload } from "react-icons/hi";
 import { FaGithubSquare } from "react-icons/fa";
 import { useSectionInView } from "@/lib/hooks";
+import { useActiveSectionContext } from "@/context/active-section-context";
 
 export default function Intro() {
   const { ref } = useSectionInView("Home", 0.5);
-
+  const { setActiveSection, setTimeOfLastClick } = useActiveSectionContext();
   return (
     <section
       ref={ref}
@@ -26,18 +27,18 @@ export default function Intro() {
             transition={{ type: "tween", duration: 0.2 }}
           >
             <Image
-              src="https://images.unsplash.com/photo-1473830394358-91588751b241?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxzZWFyY2h8MTh8fHBlcnNvbnxlbnwwfHwwfHx8MA%3D%3D&auto=format&fit=crop&w=500&q=60"
+              src="/RamilPortrait.png"
               alt="Ramil portrait"
               width="192"
               height="192"
               quality="95"
               priority={true}
-              className="h-24 w-24 rounded-full 
+              className="h-32 w-32 rounded-full object-top
             border-[0.35rem] border-white object-cover shadow-xl"
             />
           </motion.div>
           <motion.span
-            className="absolute bottom-0 right-0 text-4xl"
+            className="absolute bottom-0 right-0 text-3xl"
             initial={{ opacity: 0, scale: 0 }}
             animate={{ opacity: 1, scale: 1 }}
             transition={{
@@ -56,11 +57,11 @@ export default function Intro() {
         animate={{ opacity: 1, y: 0 }}
         className="mb-10 mt-4 px-4 text-2xl font-medium !leading-[1.5] sm:text-4xl"
       >
-        <span className="font-bold">Hello, I'm Ramil.</span> I'm a{" "}
+        <span className="font-bold">Hi, I'm Ramil.</span> I'm a{" "}
         <span className="font-bold">full-stack developer</span> with{" "}
         <span className="font-bold">3 years</span> of experience. I enjoy
-        building <span className="italic">sites & apps</span>. My focus is{" "}
-        <span className="underline">Java and React (Next.js)</span>.
+        building <span className="italic">sites and apps</span>. My focus is{" "}
+        <span className="underline">Java and Next.js</span>.
       </motion.h1>
       <motion.div
         initial={{ opacity: 0, y: 100 }}
@@ -69,6 +70,10 @@ export default function Intro() {
         className="flex flex-col sm:flex-row items-center justify-center gap-2 px-4 text-lg font-medium"
       >
         <Link
+          onClick={() => {
+            setActiveSection("Contact");
+            setTimeOfLastClick(Date.now());
+          }}
           href="#contact"
           className="group bg-gray-900 text-white px-7 py-3 flex items-center gap-2 rounded-full
           outline-none focus:scale-110 hover:scale-110 hover:bg-gray-950 active:scale-105 transition"
@@ -80,7 +85,8 @@ export default function Intro() {
         <a
           className="group bg-white px-7 py-3 flex items-center gap-2 rounded-full
         outline-none focus:scale-110 hover:scale-110 active:scale-105 transition cursor-pointer
-        border border-black/10"
+        borderBlack
+        dark:bg-white/10"
           href="/CV.pdf"
           download
         >
@@ -90,8 +96,9 @@ export default function Intro() {
 
         <a
           className="bg-white text-gray-700 p-4 flex items-center gap-2 rounded-full
-        focus:scale-[1.15] hover:scale-[1.15] hover:text-gray-950 active:scale-105 transition cursor-pointer
-        border border-black/10"
+          focus:scale-[1.15] hover:scale-[1.15] hover:text-gray-950 active:scale-105 transition cursor-pointer
+          borderBlack
+          dark:bg-white/10 dark:text-white/70"
           href="https://www.linkedin.com/in/ramil-gojayev-188108206"
           target="_blank"
         >
@@ -101,7 +108,8 @@ export default function Intro() {
         <a
           className="bg-white text-gray-700 p-4 flex items-center gap-2 text-[1.35rem] rounded-full
         focus:scale-[1.15] hover:scale-[1.15] hover:text-gray-950 active:scale-105 transition cursor-pointer
-        border border-black/10"
+        borderBlack
+        dark:bg-white/10 dark:text-white/60"
           href="https://github.com/rg-1708"
           target="_blank"
         >
