@@ -19,30 +19,32 @@ export default function About() {
     >
       <SectionHeading>About me</SectionHeading>
       <p className="mb-3">
-        After graduating with a degree in{" "}
-        <span className="font-medium">Accounting</span>, I decided to pursue my
-        passion for programming. I enrolled in a coding bootcamp and learned{" "}
-        <span className="font-medium">full-stack web development</span>.{" "}
-        <span className="italic">My favorite part of programming</span> is the
-        problem-solving aspect. I <span className="underline">love</span> the
-        feeling of finally figuring out a solution to a problem. My core stack
-        is{" "}
-        <span className="font-medium">
-          React, Next.js, Node.js, and MongoDB
-        </span>
-        . I am also familiar with TypeScript and Prisma. I am always looking to
-        learn new technologies. I am currently looking for a{" "}
-        <span className="font-medium">full-time position</span> as a software
-        developer.
+        I am a <span className="font-semibold">Software Developer</span>{" "}
+        specializing in web development. Since{" "}
+        <span className="italic">2018</span>, I've been dedicated to mastering
+        programming and building a strong foundation in this field. Currently, I
+        am pursuing studies at <span className="font-semibold">CVUT</span> to
+        further enhance my skills and knowledge.
       </p>
-
-      <p>
-        <span className="italic">When I'm not coding</span>, I enjoy playing
-        video games, watching movies, and playing with my dog. I also enjoy{" "}
-        <span className="font-medium">learning new things</span>. I am currently
-        learning about{" "}
-        <span className="font-medium">history and philosophy</span>. I'm also
-        learning how to play the guitar.
+      <p className="mb-3">
+        My focus lies in creating web applications, and I have a good grasp of
+        various programming languages. I am passionate about learning and
+        problem-solving, always eager to take on new challenges in the
+        ever-evolving tech landscape.
+      </p>
+      <p className="mb-3">
+        I pride myself on being highly versatile and a quick learner in the
+        realm of software development. Adaptability has been a key strength,
+        allowing me to swiftly grasp new concepts and technologies while
+        effectively applying them in real-world scenarios. I find immense value
+        in exchanging ideas and fostering open communication with colleagues to
+        collectively discover innovative solutions and streamline existing
+        processes through refactoring.
+      </p>
+      <p className="mb-3">
+        I value collaboration and believe in the power of teamwork for
+        successful project outcomes. My goal is to leverage my expertise to
+        create impactful solutions in the field of software development.
       </p>
     </motion.section>
   );

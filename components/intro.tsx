@@ -87,7 +87,7 @@ export default function Intro() {
         outline-none focus:scale-110 hover:scale-110 active:scale-105 transition cursor-pointer
         borderBlack
         dark:bg-white/10"
-          href="/CV.pdf"
+          href="/Ramil_Gojayev_CV_2023_ENG.pdf"
           download
         >
           Download CV{" "}

@@ -2,9 +2,9 @@ import React from "react";
 import { CgWorkAlt } from "react-icons/cg";
 import { FaReact } from "react-icons/fa";
 import { LuGraduationCap } from "react-icons/lu";
-import corpcommentImg from "@/public/corpcomment.png";
-import rmtdevImg from "@/public/rmtdev.png";
-import wordanalyticsImg from "@/public/wordanalytics.png";
+import munioImg from "@/public/munio.png";
+import commercioStoreImg from "@/public/commercio-store.png";
+import commercioAdminImg from "@/public/commercio-admin.png";
 
 export const links = [
   {
@@ -35,73 +35,85 @@ export const links = [
 
 export const experiencesData = [
   {
-    title: "Graduated bootcamp",
-    location: "Miami, FL",
+    title: "StepIt Academy",
+    location: "Baku, Azerbaijan",
     description:
-      "I graduated after 6 months of studying. I immediately found a job as a front-end developer.",
+      "I studied software development for two years, learning c++, OOP principles in c++, then C# and .Net, SQL",
     icon: React.createElement(LuGraduationCap),
-    date: "2019",
+    date: "2018-2020",
   },
   {
-    title: "Front-End Developer",
-    location: "Orlando, FL",
+    title: "1C Developer (Intern)",
+    location: "Baku, Azerbaijan",
     description:
-      "I worked as a front-end developer for 2 years in 1 job and 1 year in another job. I also upskilled to the full stack.",
+      "I worked as a 1C developer during this internship, writing code to handle necessery logic for ERP system",
     icon: React.createElement(CgWorkAlt),
-    date: "2019 - 2021",
+    date: "2022",
   },
   {
-    title: "Full-Stack Developer",
-    location: "Houston, TX",
+    title: "Java Mentor",
+    location: "Houston, TX (Remote)",
     description:
-      "I'm now a full-stack developer working as a freelancer. My stack includes React, Next.js, TypeScript, Tailwind, Prisma and MongoDB. I'm open to full-time opportunities.",
+      "I was working as a Java mentor for the group in Coding bootcamp, teaching them java, \
+      starting from Zero to Object-oriented programming, Data Structures and Alghoritms",
     icon: React.createElement(FaReact),
-    date: "2021 - present",
+    date: "2022",
   },
 ] as const;
 
 export const projectsData = [
   {
-    title: "CorpComment",
+    title: "Munio",
     description:
-      "I worked as a full-stack developer on this startup project for 2 years. Users can give public feedback to companies.",
-    tags: ["React", "Next.js", "MongoDB", "Tailwind", "Prisma"],
-    imageUrl: corpcommentImg,
+      "Elegantly crafted full-stack project, inspired by the ease of Discord and Slack.",
+    tags: [
+      "Next.js",
+      "TypeScript",
+      "MySQL",
+      "Prisma",
+      "Tailwind",
+      "Socket.io",
+      "Railway",
+    ],
+    imageUrl: munioImg,
   },
   {
-    title: "rmtDev",
+    title: "Commercio Store",
     description:
-      "Job board for remote developer jobs. I was the front-end developer. It has features like filtering, sorting and pagination.",
-    tags: ["React", "TypeScript", "Next.js", "Tailwind", "Redux"],
-    imageUrl: rmtdevImg,
+      "E-commerce store frontend which allows to purchase products of the store, view them trough categories and filters. Connected to Stripe(Dev)",
+    tags: ["React", "TypeScript", "Next.js", "Tailwind", "headlessui"],
+    imageUrl: commercioStoreImg,
   },
   {
-    title: "Word Analytics",
+    title: "Commercio Admin",
     description:
-      "A public web app for quick analytics on text. It shows word count, character count and social media post limits.",
-    tags: ["React", "Next.js", "SQL", "Tailwind", "Framer"],
-    imageUrl: wordanalyticsImg,
+      "E-commerce store admin panel, that allow to create multiple stores, banners, categories, and more. Sync with commerciostore.",
+    tags: ["Next.js", "Prisma", "Tailwind", "TypeScript", "MySQL", "shadcn ui"],
+    imageUrl: commercioAdminImg,
   },
 ] as const;
 
 export const skillsData = [
-  "HTML",
+  "Java",
+  "Spring Framework",
+  "Spring boot",
+  "Hibernate",
+  "JDBC",
+  "Microservices",
+  "Rabbit MQ",
+  "Docker",
+  "Maven",
+  "Html",
   "CSS",
   "JavaScript",
   "TypeScript",
   "React",
   "Next.js",
-  "Node.js",
   "Git",
   "Tailwind",
   "Prisma",
   "MongoDB",
-  "Redux",
-  "GraphQL",
-  "Apollo",
-  "Express",
+  "MySQL",
   "PostgreSQL",
-  "Python",
-  "Django",
   "Framer Motion",
 ] as const;
